@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node api/app.js",
+    "start": "nodemon app.js",
+    "start:prod": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mohan Kumar",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -14,5 +15,8 @@
     "express": "^4.21.1",
     "express-handlebars": "^8.0.1",
     "express-validators": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22" 
   }
 }
