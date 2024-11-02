@@ -1,0 +1,45 @@
+<div class="container">
+    <h1>{{movieTitle}}</h1>
+    <div class="movie-details">
+        <p><strong>ID:</strong> {{movieId}}</p>
+        <p><strong>Genre:</strong> {{movieGenre}}</p>
+        <p><strong>Year:</strong> {{movieYear}}</p>
+        <p><strong>Rating:</strong> {{movieRating}}</p>
+        <p><strong>Plot:</strong> {{moviePlot}}</p>
+        <img src="{{moviePoster}}" alt="{{movieTitle}} Poster" style="width: 300px; height: auto;" />
+    </div>
+    <a href="/data" class="back-button">Back to Movie List</a>
+</div>
+
+<style>
+    /* Inline CSS for basic styling - you can move this to a separate CSS file */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .movie-details {
+        margin: 20px 0;
+    }
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .back-button:hover {
+        background: #0056b3;
+    }
+</style>

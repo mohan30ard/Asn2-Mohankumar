@@ -1,0 +1,11 @@
+<!-- views/partials/_movieCard.hbs -->
+<div class="card {{#if (highlightBlankMetascore Metascore)}}highlight{{/if}}">
+    <img src="{{Poster}}" alt="Poster of {{Title}}" />
+    <h3>{{Title}}</h3>
+    <p><strong>Year:</strong> {{Year}}</p>
+    <p><strong>Genre:</strong> {{Genre}}</p>
+    <p><strong>Rating:</strong> {{Rated}}</p>
+    <p><strong>ID:</strong> {{Movie_ID}}</p>
+    <p><strong>Plot:</strong> {{Plot}}</p>
+    <p><strong>MetaScore:</strong> {{Metascore}}</p>
+</div>

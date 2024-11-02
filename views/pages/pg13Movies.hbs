@@ -1,0 +1,54 @@
+<div class="container">
+    <h1>{{movieTitle}}</h1>
+     <div class="card-container">
+            {{#if movies}}
+                {{#each movies}}
+                    <div class="card">
+                        <img src="{{this.Poster}}" alt="Poster of {{this.Title}}">
+                        <h3>{{this.Title}}</h3>
+                        <p><strong>Year:</strong> {{this.Year}}</p>
+                        <p><strong>Genre:</strong> {{this.Genre}}</p>
+                        <p><strong>Rating:</strong> {{this.Rated}}</p>
+                        <p><strong>ID:</strong> {{this.Movie_ID}}</p>
+                        <p><strong>Plot:</strong> {{this.Plot}}</p> <!-- Added plot for more information -->
+                    </div>
+                {{/each}}
+            {{else}}    
+                <p>No movies found with the given title.</p>
+            {{/if}}
+    </div>
+    <a href="/data/search/pg13" class="back-button">Back to Movie search</a>
+</div>
+
+
+<style>
+        /* Basic styling for cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 250px; /* Set width for card */
+            text-align: center;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
